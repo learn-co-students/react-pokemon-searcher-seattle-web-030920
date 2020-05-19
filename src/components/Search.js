@@ -4,8 +4,7 @@ const Search = props => {
   return (
     <div className="ui search">
       <div className="ui icon input">
-        <input className="prompt" onKeyPress={props.onKeyHandle} /> 
-        {/* //onChange={() => {props.onSearch()}} /> */}
+        <input className="prompt" onKeyPress={props.onKeyHandle} />         
         <i className="search icon" />
       </div>
     </div>

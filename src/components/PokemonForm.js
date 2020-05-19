@@ -44,8 +44,7 @@ class PokemonForm extends React.Component {
   }
 
   buildPokemon()
-  {
-    
+  {    
     return {          
     name: this.state.name,
     hp: this.state.hp,

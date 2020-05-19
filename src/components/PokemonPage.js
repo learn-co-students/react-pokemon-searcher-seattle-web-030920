@@ -27,8 +27,7 @@ class PokemonPage extends React.Component {
     }, () => {this.setUnclicks()})    
   }
 
-  setUnclicks(){
-    //this.state.pokemons.map(pkmn => pkmn.isClicked = false) 
+  setUnclicks(){    
     let unclickPokemons = this.state.pokemons.map(pkmn => {
       pkmn.isClicked = false
       return pkmn 
@@ -49,7 +48,7 @@ class PokemonPage extends React.Component {
 
   toggleImage = (pokemon) => {
     let foundIndex = this.state.pokemons.findIndex(currPokemon => currPokemon.id === pokemon.id)
-    if( foundIndex != -1)
+    if( foundIndex !== -1)
     {
       let updatedPokemon = this.state.pokemons[foundIndex]
       updatedPokemon.isClicked = !(updatedPokemon.isClicked)      
@@ -66,8 +65,7 @@ class PokemonPage extends React.Component {
 
   }
 
-  handleKeyPress = (event) => {
-    console.log(event.currentTarget.value)
+  handleKeyPress = (event) => {    
     if(event.key === "Enter")
     {
       this.setState({
